@@ -20,3 +20,7 @@ header h1 {
   height: 30%;
   margin: auto;
 }
+
+ul.detail-view {
+  margin-bottom: 10%;
+}
