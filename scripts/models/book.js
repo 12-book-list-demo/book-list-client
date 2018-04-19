@@ -35,4 +35,4 @@ ENV.apiUrl = ENV.isProduction ? ENV.productionApiUrl : ENV.developmentApiUrl;
       .catch(errorCallback);
 
   module.Book = Book;
-})(app)
+})(app);
