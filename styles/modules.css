@@ -1,5 +1,5 @@
 .container {
-  margin-top: 20%;
+  margin-top: 30%;
 }
 
 .view-title {
@@ -12,6 +12,7 @@
   margin: 0 auto;
 }
 
+
 .book-container img {
   max-width: 100%;
 }
@@ -19,7 +20,7 @@
 .book-items {
   position: relative;
   width: 100%;
-  margin-top:3.5vw;
+  margin-top:10.5vw;
 }
 
 .book-overlay {
@@ -32,6 +33,10 @@
   left: 0;
   right: 0;
   margin: auto;
+}
+
+.detail-view {
+  height: 450px;
 }
 
 .book-overlay * {
@@ -65,4 +70,25 @@
 #error-message p {
   font-size: 3vw;
   color: #d13227;
+}
+
+.icon-menu {
+  font-size: 50px;
+  transition: 300ms;
+}
+
+.icon-menu:hover {
+  color: rgb(209, 27, 27);
+  cursor: pointer
+}
+
+a {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  transition: 300ms;
+}
+
+a:hover {
+  color: rgb(209, 27, 27)
 }
