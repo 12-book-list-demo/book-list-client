@@ -72,6 +72,14 @@
   color: #d13227;
 }
 
+.the-nav {
+  display:none;
+}
+
+#main-nav {
+  transition: 300ms;
+}
+
 .icon-menu {
   font-size: 50px;
   transition: 300ms;
@@ -80,6 +88,10 @@
 .icon-menu:hover {
   color: rgb(209, 27, 27);
   cursor: pointer
+}
+
+#main-nav:hover .the-nav {
+  display: block;
 }
 
 a {
@@ -91,4 +103,45 @@ a {
 
 a:hover {
   color: rgb(209, 27, 27)
+}
+
+form label input, form label textarea, form button, form h2 {
+  display: block;
+  width: 80%;
+  height: 50px;
+  margin: 1% auto 5% auto;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 0;
+  font-size: 20px;
+  padding-left: 5%;
+  color: rgb(65, 62, 62);
+}
+
+form label ::-webkit-input-placeholder {
+  color: rgb(211, 205, 205);
+}
+
+form label textarea {
+  height: 100px;
+}
+form button {
+  background-color: rgb(80, 78, 78);
+  color: white;
+  float: right;
+  margin-right: 8%;
+  padding: 0%;
+  width: 30%;
+  border: none;
+  height: 55px;
+}
+form label p {
+  margin: 0 auto;
+}
+
+form h2 {
+  padding-left: 0%;
+  border: none;
+  font-size: 24px;
+  text-decoration: underline;
 }

@@ -42,7 +42,7 @@ ENV.apiUrl = ENV.isProduction ? ENV.productionApiUrl : ENV.developmentApiUrl;
       .catch(errorCallback);
   };
 
-  Book.prototype.create = function (callback) {
+  Book.prototype.create = function () {
     $.post(`${ENV.apiUrl}/api/v1/books`, {
       title: this.title,
       author: this.author,
@@ -50,9 +50,8 @@ ENV.apiUrl = ENV.isProduction ? ENV.productionApiUrl : ENV.developmentApiUrl;
       image_url: this.image_url,
       description: this.description
     })
-      .then(console.log)
-      .then(callback);
-  }
+      .then(console.log);
+  };
 
   $('#new-form').on('submit', (e) => {
     e.preventDefault();
@@ -66,6 +65,7 @@ ENV.apiUrl = ENV.isProduction ? ENV.productionApiUrl : ENV.developmentApiUrl;
     console.log(book);
     book.create();
     $('#book-list').append(book.toHtml());
+    $('#new-form').trigger("reset");
 
 
   });

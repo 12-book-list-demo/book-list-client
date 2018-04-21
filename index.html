@@ -31,26 +31,35 @@
     <li class="book-items" data-bookid={{book_id}}>
       <div class="book-container">
         <img src={{image_url}}>
-        <div class="book-overlay">
-          <h3><a href="book/{{book_id}}">{{title}}</a></h3>
+        <div class="book-overlay"> 
+          <h3></h3>{{title}}</h3>
           <p>{{author}}</p>
           <p>{{description}}</p>
         </div>
-      </div>
-    </li>
-  </script>
-</head>
-<body>
-  <header>
-    <div class="header-content">
-      <a href="/"><img src="http://www.bootcamps.in/wp-content/uploads/2015/06/code-fellows-shield.png" alt="logo"></a>
-      <h1>Code Fellows Books</h1>
-      <ul>
-          <span class="icon-menu"></span>
-          <li><a href="/">Home</a></li>
-        <li><a href="/new">New Book</a></li>
-      </ul>
-    </div>
+        </div>
+        </li>
+        </script>
+        </head>
+        
+        <body>
+          <header>
+            <div class="header-content">
+              <a href="/">
+                <img src="http://www.bootcamps.in/wp-content/uploads/2015/06/code-fellows-shield.png" alt="logo">
+              </a>
+              <h1>Code Fellows Books</h1>
+              <div id="main-nav">
+                <span class="icon-menu"></span>
+                <ul class="the-nav">
+                  <li>
+                    <a href="/">Home</a>
+                  </li>
+                  <li>
+                    <a href="/new">New Book</a>
+                  </li>
+                </ul>
+                <div>
+                </div>
   </header>
   <main>
     <section class="error-view container">
@@ -67,19 +76,18 @@
         <ul class="detail-list"></ul>
       </section>
     <form action="#" id="new-form" class="container form-view">
-        
+        <h2>Add a New Book</h2>
         <label>
-          <input type="text" id="book-title" placeholder="Book Title" required>
+          <input type="text" id="book-title" placeholder="title" required>
         </label>
         <label>
-          <input type="text" id="book-author" placeholder="Author Name" required>
+          <input type="text" id="book-author" placeholder="author" required>
         </label>
         <label>
-            <input type="text" id="book-isbn" placeholder="Book ISBN" required>
-
+            <input type="text" id="book-isbn" placeholder="isbn" required>
         </label>
         <label>
-          <input type="text" id="book-image-url" placeholder="Book's image URL" required>
+          <input type="text" id="book-image-url" placeholder="image URL" required>
         </label>
         <label>
           <textarea id="book-description" cols="30" rows="10" placeholder="Book's Description"></textarea>
