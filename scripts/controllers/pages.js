@@ -13,7 +13,7 @@ page('/*', (ctx, next) => {
 page('/', () => $('.book-view').show());
 page('/book/:id', result => app.Book.fetchOne(result.params.id, app.bookView.detailView));
 page('/new', app.formView.show);
-page('/hi', () => console.log('hi'))
+
 
 
 page.start();
